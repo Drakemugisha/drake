@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mugisha drake | front end Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+  <header>
+    <nav>
+        <p>MUGISHA <span>DRAKE</span></p>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="highlight">MUGISHA DRAKE</span></h1>
+      <p class="highlight">FRONT END WEB DEVELOPER</p>
+      <p>
+        Front end web Developer well versed with HTML/CSS, javascript, bootstrap, react, git and git hub
+        I'm also very knowledgable about computer softawres, such as word document, spread sheet, presentation, publisher
+      </p>
+
+    </div>
+    <div class="profile-picture">
+      <img src="images/drake.jpg" alt="mugisha drake" />
+    </div>
+  </section>
+
+  <fieldset id="skills">
+    <legend class="skills"> <h1>my skills</h1></legend>
+
+    <div class="skill-container">
+      <div class="html">
+        <div class="line">
+          <p>html</p>
+        </div>
+        <p>90%</p>
+      </div>
+  
+      <div class="css">
+        <div class="linecss">
+          <p>css</p>
+        </div>
+        <p>80%</p>
+      </div>
+      <div class="bootstrap">
+        <div class="linebootsrap">
+          <p>bootstrap</p>
+        </div>
+        <p>80%</p>
+      </div>
+      <div class="javascript">
+        <div class="linejavascript">
+          <p>javascript</p>
+        </div>
+        <p>75%</p>
+      </div>
+      <div class="react">
+        <div class="linereact">
+          <p>react</p>
+        </div>
+        <p>60%</p>
+      </div>
+      <div class="python">
+        <div class="linepython">
+          <p>python</p>
+        </div>
+        <p>50%</p>
+      </div>
+      <div class="git">
+        <div class="linegit">
+          <p>git & github</p>
+        </div>
+        <p>60%</p>
+      </div>
+    </div>
+
+  </fieldset>
+
+  <fieldset id="projects">
+    <legend><h1>previous projects</h1></legend>
+    <div class="projects-container">
+
+      <div class="card">
+        <img src="images/todo.jpg" alt="to do list">
+        <h3>to-do list app</h3>
+        <p>allows you to add and remove tasks. done by react</p>
+        <a href="projects/index.html"> <button class="cardbtn">check it out</button></a>
+      </div>
+
+      <div class="card">
+        <img src="images/calc.jpg" alt="calculator">
+        <h3>calculator app</h3>
+        <p>can carry out basic mathematic calculations, HTML/CSS and javascript</p>
+        <a href="projects/calc.html"> <button class="cardbtn">check it out</button></a>
+      </div>
+
+      <div class="card">
+        <img src="images/movies.jpg" alt="movies">
+        <h3>movie website</h3>
+        <p>movie recommending website, HTML/CSS and javascript</p>
+        <a href="projects/bootstrap-5.3.3-dist/index.html"> <button class="cardbtn">check it out</button></a>
+      </div>
+
+      <div class="card">
+        <img src="images/icon.png" alt="food">
+        <h3>food website</h3>
+        <p>tells you about food, what to eat and what to not eat, HTML/CSS</p>
+        <a href="projects/food/index.html"> <button class="cardbtn">check it out</button></a>
+      </div>
+
+      
+    <div class="card">
+      <img src="projects/food/end.jpg" alt="food">
+      <h3>login website</h3>
+      <p>login website, with ultimate design</p>
+      <a href="projects/food/login.html"> <button class="cardbtn">check it out</button></a>
+    </div>
+
+    
+  </div>
+    </div>
+
+  </fieldset>
+
+  <div class="contactus">
+    <fieldset id="contact">
+      <legend><h1>contact us</h1></legend>
+      <form action="send_message.php" id="mesageForm" method="POST">
+        <label for="name">your name</label>
+        <input type="text" id="name" name="name" placeholder="enter you name" required><br><br>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="enter email"><br><br>
+  
+        <label for="message"></label>
+        <textarea name="message" id="message" rows="4" required></textarea><br><br>
+  
+        <button type="submit" onclick="clearFeild()">send message</button>
+      </form>
+    </fieldset>
+
+  </div>
+
+  <footer>
+    <div class="socialMedia">
+      <a href="https://twitter.com/drake____5" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.tiktok.com/@local.man84" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/+256774742220" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/mugisha-drake-31223232a" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 mugisha drake. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

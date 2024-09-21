@@ -1,0 +1,49 @@
+/* login page */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(end.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 7px 7px 7px rgb(125, 125, 66);
+}
+label, p {
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+a {
+    text-decoration: none;
+}
+button{
+    border: none;
+    padding: 10px;
+    background-color: hsl(180, 100%, 80%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1{
+    color: rgb(53, 55, 54);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}

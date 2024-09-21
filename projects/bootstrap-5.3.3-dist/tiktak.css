@@ -1,0 +1,26 @@
+
+#gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 0 auto;
+    width: max-content;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 237, 237);
+    border: 2px solid;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(30, 29, 27);
+    background-color: aqua;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

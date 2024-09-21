@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    background-image: linear-gradient( tomato, blue);
+    background-clip: text;
+    color: transparent;
+}
+ul{
+    background-image: linear-gradient(tomato, blue);
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid tomato;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(224, 46, 15);
+}
+li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: light;
+    font-size: 30px;
+    border: 2px solid;
+    
+}
+button{
+    height: 30px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.cross{
+    text-decoration: line-through;
+}
