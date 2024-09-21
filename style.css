@@ -13,17 +13,17 @@ body {
 header {
     background-color: hsl(195, 83%, 57%);
     padding: 20px 0;
-  }
+}
   
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-  }
+}
   
 nav ul li {
     margin: 0 15px;
-  }
+}
   
 nav ul li a {
     color: #f5f5f5;
@@ -303,6 +303,65 @@ footer {
 
 .socialMedia i{
     margin-left: 10px;
+}
+
+/* dark mode */
+
+#dark{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+
+}
+#dark::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    top: 3px;
+    left: 5px;
+    border-radius: 50px;
+}
+
+.darkmode #dark{
+    background-color: #fff;
+}
+.darkmode #dark:after{
+    align-items: center;
+    background-color: black;
+    left: 23px;
+}
+
+.darkmode{
+    background-color: black;
+    .highlight{
+        color: rgb(255, 255, 255, 0.4);
+    }
+    #contact input, textarea{
+        box-shadow: inset 4px 4px 4px hsl(0, 0%, 20%);
+    }
+    .cardbtn:hover{
+        color: hsl(0, 0%, 20%);
+    }
+
+}
+
+.darkfooter{
+    background-color: hsl(0, 0%, 20%);
+    nav ul li a:hover {
+        color: hsl(0, 0%, 20%);
+    }
+    nav p span{
+        color: rgb(255, 255, 255, 0.2);
+    }
 }
 /* media */
 @media (max-width: 600px) {

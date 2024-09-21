@@ -93,7 +93,21 @@ gameLoop();
 canvas.addEventListener("click", ()=>{
     canvas.classList.add("hidden");
 })
-// function  delay(){
-//     alert("click on the circle to remove it")
-// }
-// setTimeout(delay, 3000)
+function  delay(){
+    alert("click on the circle to remove it")
+}
+setTimeout(delay, 3000)
+
+
+const input = document.getElementById("dark");
+const hero = document.querySelector("body");
+const footer = document.querySelector("footer");
+const header = document.querySelector("header");
+
+
+input.addEventListener("click", () =>{
+    hero.classList.toggle("darkmode");
+    footer.classList.toggle("darkfooter");
+    header.classList.toggle("darkfooter");
+
+})
