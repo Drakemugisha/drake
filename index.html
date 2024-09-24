@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mugisha drake | front end Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,14 +14,28 @@
   </div>
   <header>
     <nav>
-        <p>MUGISHA <span>DRAKE</span> </p>
+      <div class="nav-container">
+        <p>MUGISHA <span>DRAKE</span></p>
         <input type="checkbox" id="dark">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact me</a></li>
-      </ul>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact me</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="material-symbols-outlined" id="dropdown-Button">
+            menu
+          </span>
+        </div>
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact me</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 

@@ -14,7 +14,10 @@ header {
     background-color: hsl(195, 83%, 57%);
     padding: 20px 0;
 }
-  
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
 nav ul {
     display: flex;
     justify-content: center;
@@ -45,6 +48,39 @@ nav p {
 nav p span{
     color: hsl(0, 37%, 10%);
 }
+
+/* hamburger */
+.hamburger{
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.dropdown-menu{
+    display: none;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s ease;
+}
+.dropdown-menu li{
+    padding: 12px 16px;
+}
+
+.dropdown-menu li a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+.dropdown-menu li a:hover{
+    background: #f1f1f1f1;
+}
+
+/* hero */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -371,8 +407,13 @@ footer {
         flex-direction: column;
         gap: 50px;
     }
-      
-    nav p {
+    nav p{
+        display: none;
+    } 
+    .hamburger{
+        display: flex;
+    }
+    nav ul {
         display: none;
     }
     
@@ -386,6 +427,7 @@ footer {
     .skill-container>div{
         margin-top: 10px;
     }
+
 }
 
   

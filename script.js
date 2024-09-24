@@ -93,12 +93,9 @@ gameLoop();
 canvas.addEventListener("click", ()=>{
     canvas.classList.add("hidden");
 })
-function  delay(){
-    alert("click on the circle to remove it")
-}
-setTimeout(delay, 3000)
 
 
+// dark mode
 const input = document.getElementById("dark");
 const hero = document.querySelector("body");
 const footer = document.querySelector("footer");
@@ -110,4 +107,19 @@ input.addEventListener("click", () =>{
     footer.classList.toggle("darkfooter");
     header.classList.toggle("darkfooter");
 
+})
+
+// hamburger menu
+
+const dropdownButton = document.getElementById("dropdown-Button");
+const dropdownMenu = document.getElementById("dropdownMenu");
+
+dropdownButton.addEventListener("click", ()=>{
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? 'none' : "block";
+    dropdownButton.textContent = dropdownButton.textContent === "close" ? 'menu' : 'close';
+})
+
+window.addEventListener('click', (event) => {
+    if(!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)){
+        dropdownMenu.style.display = 'none';}
 })
