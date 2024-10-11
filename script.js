@@ -121,5 +121,7 @@ dropdownButton.addEventListener("click", ()=>{
 
 window.addEventListener('click', (event) => {
     if(!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)){
-        dropdownMenu.style.display = 'none';}
+        dropdownMenu.style.display = 'none';
+        dropdownButton.textContent = "menu";
+    }
 })

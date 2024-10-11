@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(end.jpg);
+    background-image: url(pexels-rovenimages-com-344613-949587.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body{
     box-shadow: 7px 7px 7px rgb(125, 125, 66);
 }
 label, p {
-    color: grey;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 input{
@@ -33,7 +33,7 @@ a {
 button{
     border: none;
     padding: 10px;
-    background-color: hsl(180, 100%, 80%);
+    background-color: white;
     border-radius: 20px;
     cursor: pointer;
 }
