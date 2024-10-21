@@ -125,3 +125,28 @@ window.addEventListener('click', (event) => {
         dropdownButton.textContent = "menu";
     }
 })
+// animate on scroll
+
+function isElementInViewPort(el){
+    const rect = el.getBoundingClientRect();
+    return(
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight) &&
+        rect.left <= (window.innerWidth) //check if element is within view port
+    );
+}
+
+function onScroll(){
+    const boxes = document.querySelectorAll(".line, .card");
+    boxes.forEach(box => {
+        if(isElementInViewPort(box)){
+            box.classList.add("animate");
+        }
+        else{
+            box.classList.remove("animate")
+        }
+    });
+}
+
+window.addEventListener('scroll', onScroll);
