@@ -143,9 +143,6 @@ function onScroll(){
         if(isElementInViewPort(box)){
             box.classList.add("animate");
         }
-        else{
-            box.classList.remove("animate")
-        }
     });
 }
 
